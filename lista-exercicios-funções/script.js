@@ -46,7 +46,7 @@ const mencao = function (n1,n2) {
 const n1 = 9;
 const n2 = 7;
 
-document.write(`<br>${mencao(n1,n2)}<br>`);
+document.write(`<br>${mencao(n1,n2)}`);
 
 //Arrow function com parâmetro único 
 
@@ -56,7 +56,7 @@ const triplo = (x) => {
 
 const x = 109;
 
-document.write(`O triplo do número é ${triplo(x)}`);
+document.write(`<br>O triplo do número é ${triplo(x)}`);
 
 //Arrow function com mais de um parâmetro
 const soma = (a,b,c,d) => {
@@ -65,12 +65,12 @@ const soma = (a,b,c,d) => {
 
 const a = 10;
 const b = 5;
-const c =68;
+const c = 68;
 const d = 84;
 
-cdocument.write(`A soma é ${soma(a,b,c,d)}`);
+document.write(`<br>A soma é ${soma(a,b,c,d)}`);
 
 //IIFE
 const saudacao = (function (nome){
-    document.write(`Olá, ${nome}! Seja bem-vindo.`);
+    document.write(`<br>Olá, ${nome}! Seja bem-vindo.`);
 })("Rafael");

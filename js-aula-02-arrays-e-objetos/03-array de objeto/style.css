@@ -1,0 +1,25 @@
+*{
+    
+   
+}
+
+
+body{
+    margin: 100px 70px;
+}
+
+.card{
+    border: solid 0.5px #383636;
+    padding: 15px 8px;
+    border-radius: 5px;
+    background-color: rgb(94, 88, 88);
+    color: white;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
