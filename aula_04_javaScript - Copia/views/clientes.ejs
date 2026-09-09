@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') %>
+
+        <h4>Pagina de Clientes</h4>
+        
+<nav class="navbar">
+
+    <p class="menu-titulo">Menu</p>
+
+    <ul>
+        <li><a href="/">Inicio</a></li>
+    </ul>
+    </nav>
+
+
+<!-- Tabela Clientes -->
+
+<section class="tabela">
+
+    <h1>Lista de clientes</h1>
+
+    <div class="tabela-container">
+        <table class="tabela">
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% clientes.forEach((cliente) => { %>
+
+                    <tr>
+                        <td><%= cliente.nome %></td>
+                        <td><%= cliente.cpf %></td>
+                        <td><%= cliente.telefone %></td>
+                        </td>
+                    </tr>
+
+                <% }); %>
+            </tbody>
+
+        </table>
+    </div>
+
+</section>
+</nav>
+
+<%- include('partials/footer.ejs') %>

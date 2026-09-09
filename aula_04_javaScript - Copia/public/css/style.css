@@ -1,0 +1,149 @@
+/* -------------------- Reset e Body -------------------- */
+body {
+    margin: 0;
+    padding-top: 90px;
+    font-family: Arial, sans-serif;
+}
+
+/* -------------------- Header / Título -------------------- */
+.titulo {
+    text-align: center;   /* centraliza o título */
+}
+
+/* -------------------- Navbar -------------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.menu-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e05656;
+    transform: scale(1.05);
+}
+
+/* -------------------- Banner -------------------- */
+.banner {
+    width: 400px;
+    display: block;        /* garante que seja tratado como bloco */
+    margin: 20px auto;     /* centraliza horizontalmente */
+    border-radius: 20px;
+}
+
+/* -------------------- Tabela -------------------- */
+.tabela {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabela h1 {
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tabela thead {
+    color: #ffffff;
+    background-color: #570000;
+}
+
+.tabela th,
+.tabela td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela th {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tabela td {
+    color: #333333;
+    font-size: 16px;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background-color: #f4f1ff;
+}
+
+.tabela tbody tr {
+    transition: 0.3s;
+}
+
+.tabela tbody tr:hover {
+    color: #ffffff;
+    background-color: #e05656;
+}
+
+.tabela tbody tr:hover td {
+    color: #ffffff;
+}
+
+.tabela tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* -------------------- Footer -------------------- */
+.rodape {
+    text-align: center;   /* centraliza o footer */
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #570000;
+    color: white;
+}
+
+/* -------------------- Responsividade -------------------- */
+@media (max-width: 600px) {
+    .lista {
+        width: 95%;
+    }
+
+    .tabela th,
+    .tabela td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
