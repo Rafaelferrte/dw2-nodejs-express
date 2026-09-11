@@ -28,11 +28,27 @@ document.write(`<h2>Estoque de Produtos</h2>`);
 // Mostrar produtos
 estoqueProdutos.forEach((produto) => {
   document.write(`
-        Produto: ${produto.nome} <br>
-        Marca: ${produto.marca} <br>
-        Preço: R$ ${produto.preco} <br>
-        Descrição: ${produto.descricao} <br><br>
-        `);
+    <div class="produto">
+        <h3>${produto.nome}</h3>
+
+        <p>
+            <strong>Marca:</strong>
+            <span>${produto.marca}</span>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            <span class="preco">
+                R$ ${produto.preco.toFixed(2).replace(".", ",")}
+            </span>
+        </p>
+
+        <p>
+            <strong>Descrição:</strong>
+            ${produto.descricao}
+        </p>
+    </div>
+`);
 });
 
 // Adicior produtos no final do vetor
@@ -49,11 +65,27 @@ document.write(`<h2>Estoque de Produtos</h2>`);
 // Mostrar produtos
 estoqueProdutos.forEach((produto) => {
   document.write(`
-        Produto: ${produto.nome} <br>
-        Marca: ${produto.marca} <br>
-        Preço: R$ ${produto.preco} <br>
-        Descrição: ${produto.descricao} <br><br>
-        `);
+    <div class="produto">
+        <h3>${produto.nome}</h3>
+
+        <p>
+            <strong>Marca:</strong>
+            <span>${produto.marca}</span>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            <span class="preco">
+                R$ ${produto.preco.toFixed(2).replace(".", ",")}
+            </span>
+        </p>
+
+        <p>
+            <strong>Descrição:</strong>
+            ${produto.descricao}
+        </p>
+    </div>
+`);
 });
 
 // Adicior produtos no inicio do vetor
@@ -70,11 +102,27 @@ document.write(`<h2>Estoque de Produtos</h2>`);
 // Mostrar produtos
 estoqueProdutos.forEach((produto) => {
   document.write(`
-        Produto: ${produto.nome} <br>
-        Marca: ${produto.marca} <br>
-        Preço: R$ ${produto.preco} <br>
-        Descrição: ${produto.descricao} <br><br>
-        `);
+    <div class="produto">
+        <h3>${produto.nome}</h3>
+
+        <p>
+            <strong>Marca:</strong>
+            <span>${produto.marca}</span>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            <span class="preco">
+                R$ ${produto.preco.toFixed(2).replace(".", ",")}
+            </span>
+        </p>
+
+        <p>
+            <strong>Descrição:</strong>
+            ${produto.descricao}
+        </p>
+    </div>
+`);
 });
 
 estoqueProdutos.sort((a, b) => a.preco - b.preco);
@@ -83,9 +131,25 @@ document.write(`<h2>Estoque de Produtos</h2>`);
 
 estoqueProdutos.forEach((produto) => {
   document.write(`
-        Produto: ${produto.nome} <br>
-        Marca: ${produto.marca} <br>
-        Preço: R$ ${produto.preco.toFixed(2)} <br>
-        Descrição: ${produto.descricao} <br><br>
-    `);
+    <div class="produto">
+        <h3>${produto.nome}</h3>
+
+        <p>
+            <strong>Marca:</strong>
+            <span>${produto.marca}</span>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            <span class="preco">
+                R$ ${produto.preco.toFixed(2).replace(".", ",")}
+            </span>
+        </p>
+
+        <p>
+            <strong>Descrição:</strong>
+            ${produto.descricao}
+        </p>
+    </div>
+`);
 });
