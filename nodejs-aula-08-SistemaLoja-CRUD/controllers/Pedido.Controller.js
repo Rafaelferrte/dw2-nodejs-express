@@ -15,4 +15,19 @@ router.get("/pedidos", function (req, res) {
   })
 });
 
+// Rota cadastrar pedidos
+router.post("/pedidos/cadastrar", (req,res) => {
+  const numero = req.body.numero;
+  const valor = req.body.valor;
+
+  Pedido.create({
+    numero: numero,
+    valor: valor
+  }).then(() => {
+    res.redirect("/pedidos");
+  }).catch((error) => {
+    console.log(`Ocorreu um erro ao cadastrar um pedido. Erro: ${error}`);
+  });
+});
+
 export default router;

@@ -1,6 +1,28 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
+    <!-- Formulario de cadastro de produtos -->
+     <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Cadastrar produtos</h1>
+            </div>
+            <div class="card-body">
+                <form action="/produtos/cadastrar/" method="POST">
+                    <label for="nome">Nome do produto:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome" class="form-control" required>
+                    <label for="preco">Preço do produto:</label>
+                    <input type="number" name="preco" id="preco" min="0" step="0.01" placeholder="Insira o preço" class="form-control" required>
+                    <label for="categoria">Categoria do produto:</label>
+                    <input type="text" name="categoria" id="categoria" placeholder="Insira a categoria" class="form-control" required>
+                    <br>
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="reset" class="btn btn-danger">Limpar</button>
+                </form>
+            </div>
+        </div>
+     </div>
+
     <div class="container">
         <div class="card">
             <div class="card-header">

@@ -26,6 +26,8 @@ import Pedido from "./models/Pedido.js";
 import Produto from "./models/Produto.js";
 
 // CONFIGURAÇÕES DO EXPRESS
+// Configurando o express para permitir dados a parir de formularios
+app.use(express.urlencoded({ extended: false }));
 // Configurando o EJS
 app.set("view engine", "ejs"); // EJS renderiza as páginas do site
 // Configurando a pasta 'PUBLIC' para arquivos estáticos
